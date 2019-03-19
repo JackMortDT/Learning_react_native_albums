@@ -28,13 +28,15 @@ const AlbumDetail = ({ album }) => {
           <Text>{artist}</Text>
         </View>
       </CardSection>
+
       <CardSection>
         <Image 
           style={imageStyle}
           source={{ uri: image }}/>
       </CardSection>
+
       <CardSection>
-        <Botton />
+        <Botton onPress={() => console.log(title)} />
       </CardSection>
     </Card>
   );
